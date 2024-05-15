@@ -1,0 +1,17 @@
+<div class="user__menu">
+    <div class="user__menu-list">
+        <div *ngIf="user; else noUser">
+            <ul class="user__data flex gap-5 mt-3">
+                <li class="mt-5">Hi, <span class="user__data-name mr-5 font-bold">John Doe</span>|</li>
+                <li class="user__menu-item mt-5">Sign out</li>
+                <li class="user__data-item w-16 h-16 overflow-hidden rounded-full border border-rose-900">
+                    <img class="w-auto" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                        alt="user" />
+                </li>
+            </ul>
+        </div>
+        <ng-template #noUser>
+            <button class="btn mt-6">Get started</button>
+        </ng-template>
+    </div>
+</div>
